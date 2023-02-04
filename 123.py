@@ -36,3 +36,4 @@ elif choice not in ['+', '-', '*', '/' '%' '**']:
 else:
         result = 'Unknown operator'
 print(f'Result is {result}')
+print("Thanks for calculation")
