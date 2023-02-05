@@ -7,7 +7,8 @@ print("c. multiplication")
 print("d. division")
 print("e. percent")
 print("f. exponential")
-print("g. press G to end")
+print("g. simplify")
+print("h. press H to end")
 
 choice = input("enter your choice:")
 
@@ -25,6 +26,11 @@ elif choice in ['%' , "per" , "e"]:
         result = (num1) % (num2)
 elif choice in ['^' , "exp" , "f"]:
         result = (num1) ** (num2)
+elif choice in ['g' , 'sim' , ]:
+        op1 = input("enter your first operator:")
+        op2 = input("enter your second operator:")
+        if op1 in ['+'] and op2 in ['-']:
+                result = float(num1) + float(num2) - float(num2) 
 elif not isinstance(num1, (int, float)):
         raise ValueError("Invalid number \"" + str(num1) + "\"")
 elif not isinstance(num2, (int, float)):
